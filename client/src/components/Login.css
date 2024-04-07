@@ -1,0 +1,76 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Full height of the viewport */
+}
+
+.login-box {
+    background-color: #808080; /* Adjusted for better contrast */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Set max width for the form */
+    margin: 15px; /* Added margin for smaller screens */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Additional styling for the form elements as needed */
+.form-control {
+    margin-bottom: 10px; /* Spacing between form fields */
+}
+
+/* Style for the button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.forgot-password-link {
+    color: aqua;
+    text-decoration: none;
+    display: block; /* Ensures it's on its own line on smaller screens */
+    text-align: right; /* Aligns link to the right */
+    margin-top: 10px; /* Adds some space above the link */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container{
+        height: 100vh;
+    }
+    .login-box {
+        margin-top: 25%;
+        padding: 20px; /* Slightly reduce padding */
+        max-width: 90%; /* Increase width to use more screen space */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+        margin-top: 25%;
+        max-width: 95%; /* Further increase width for very small screens */
+    }
+
+    /* Adjust font size for smaller screens for readability */
+    h2 {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .submit-btn {
+        padding: 8px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}

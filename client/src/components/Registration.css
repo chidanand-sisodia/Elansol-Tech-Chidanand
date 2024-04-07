@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+}
+
+.registration-box {
+    background-color: black; 
+    color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px; /* This helps ensure that on larger screens, it doesn't stretch too much */
+}
+.login-btn{
+    text-decoration: none;
+    color: aqua;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for medium devices */
+    }
+
+    .registration-box {
+        margin-top: 20%; /* Adjust the top margin for medium devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px; /* Further reduce padding for small devices */
+    }
+
+    .registration-box {
+        margin-top: 20%; /* Adjust the top margin for smaller devices */
+        padding: 30px; /* Slightly reduce the padding inside the box */
+    }
+
+    .submit-btn {
+        padding: 8px; /* Adjust the padding for the submit button */
+    }
+}

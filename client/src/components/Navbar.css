@@ -1,0 +1,24 @@
+
+.Navbar{
+    position: fixed;
+}
+.container{
+    padding: 10px;
+}
+.navbar-brand, .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Further adjustments to the navbar's nav items */
+.navbar-nav .nav-link {
+    margin-right: 15px; /* Adjust spacing between nav items */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin-right: 0; /* Reset spacing for collapsed nav */
+    }
+}
