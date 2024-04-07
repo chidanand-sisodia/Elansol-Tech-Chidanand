@@ -10,11 +10,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json()); // for parsing application/json
-app.use(cors({
-    origin:["https://elansol-tech-chidanand.vercel.app/"],
-    methods:["POST","GET"],
-    credentials:true
-}))
+app.use(cors())
 
 mongoose.connect(process.env.MONGODB_URI);
 
