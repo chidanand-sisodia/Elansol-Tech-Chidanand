@@ -28,7 +28,7 @@ Before you begin, ensure you have the following installed:
 
 Navigate to the project directory:
 
-cd elansol-tech-Chidanand
+cd elansol-tech-chidanand
 
 Install dependencies:
 
