@@ -13,7 +13,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("https://elansol-tech-chidanand-server-ppc3v1nn6-chidanands-projects.vercel.app/users");
+        const response = await axios.get("https://elansol-tech-chidanand-server.vercel.app/users");
         setUsers(response.data);
         setFilteredUsers(response.data); // Initialize filteredUsers
       } catch (error) {

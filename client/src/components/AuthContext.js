@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (formData, onSuccess, onError) => {
         try {
-            const response = await axios.post('https://elansol-tech-chidanand-server-ppc3v1nn6-chidanands-projects.vercel.app/auth/login', formData);
+            const response = await axios.post('https://elansol-tech-chidanand-server.vercel.app/auth/login', formData);
             setUser({ email: response.data.user.email });
 
             // Optionally, if your backend sends a token, store it in localStorage
