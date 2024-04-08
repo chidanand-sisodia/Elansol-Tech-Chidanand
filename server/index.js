@@ -10,12 +10,24 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json()); // for parsing application/json
-app.use(cors())
+
+const corsConfig={
+    origin:"https://elansol-tech-chidanand.vercel.app",
+    Credential:true,
+    methods:["GET","POST","PUT","DELETE"],
+};
+
+app.options("", cors(corsConfig))
+app.use(cors(corsConfig))
 
 mongoose.connect(process.env.MONGODB_URI);
 
 app.use('/auth', authRoutes);
 app.use('/users', usersRoutes);
+
+app.get('/',(req,res)=>{
+    res.json("Backend is Working..!");
+  })
 
 app.post('/', async (req, res) => {
     try {
