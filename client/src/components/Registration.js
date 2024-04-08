@@ -30,7 +30,7 @@ function Registration() {
       // Add any additional feedback to the user here (e.g., toast notification)
     } else {
       axios
-        .post("http://localhost:5000/", { name, dob, email,gender, password, })
+        .post("https://elansol-tech-chidanand-server-ppc3v1nn6-chidanands-projects.vercel.app/", { name, dob, email,gender, password, })
         .then((response) => {
           console.log("SUCCESS", response.data);
           alert("Registration Successful..!");
